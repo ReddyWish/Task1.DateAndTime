@@ -1,7 +1,7 @@
 function getDateFormat(date, separator) {
     date = new Date()
     let year = date.getFullYear()
-    let month = date.getMonth()
+    let month = date.getMonth() + 1
     if (month < 10) {
         month = '0' + month
     }
@@ -10,7 +10,7 @@ function getDateFormat(date, separator) {
         day = '0' + day
     }
     let finalDate = day + separator + month + separator + year
-    
+
     return finalDate
 }
 
